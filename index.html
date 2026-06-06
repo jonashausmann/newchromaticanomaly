@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chromatic Anomaly: Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+  <div id="splash-screen">
+    <img src="images/gallery/nosignal.jpg" alt="Enter">
+  </div>
+  <header class="site-header">
+
+  <h1 class="site-title">Chromatic Anomaly</h1>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Portfolio</a>
+    <a href="dress-up.html">Dress me up!</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+  </nav>
+  </header>
+
+  <main class="page-home">
+    <h1 class="gallery-header">Paintings</h1>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="images/gallery/rednailpolishmonster.jpg" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on MDF Board · 26″ × 11″ · 2024</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/cigarette.jpg" alt="Untitled">
+        <p class="painting-title">Filtered</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/streetwearr.png" alt="Streetwear">
+        <p class="painting-title">Streetwear</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/hairroller.jpg" alt="Hair Roller">
+        <p class="painting-title">Hair Roller</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/aestheticobedience.png" alt="Aesthetic Obedience">
+        <p class="painting-title">Aesthetic Obedience</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/highvoltage.jpg" alt="High Voltage">
+        <p class="painting-title">High Voltage</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/jncojeans.png" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2024</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/outfitexe.png" alt="Outfit.exe">
+        <p class="painting-title">Outfit.exe</p>
+        <p class="painting-meta">Acrylic on MDF · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/partyhat.png" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on MDF Board · 2′ × 4′ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/nosignal.jpg" alt="No Signal">
+        <p class="painting-title">No Signal</p>
+        <p class="painting-meta">Acrylic on MDF Board · 5′ × 3′ · 2026</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/trafficmonster.jpg" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on Panel · 16″ × 18″ · 2025</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/greenmonster.jpg" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on MDF Panel · 17″ × 18″ · 2024</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/gallery/horizontalpinkdiva.jpg" alt="Untitled">
+        <p class="painting-title">Untitled</p>
+        <p class="painting-meta">Acrylic on Panel · 16″ × 18″ · 2025</p>
+      </div>
+
+    </div>
+  </main>
+  <script>
+    var splash = document.getElementById('splash-screen');
+    if (sessionStorage.getItem('splashSeen')) {
+      splash.remove();
+    } else {
+      splash.addEventListener('click', function() {
+        sessionStorage.setItem('splashSeen', '1');
+        splash.style.opacity = '0';
+        setTimeout(function() { splash.remove(); }, 700);
+      });
+    }
+  </script>
+</body>
+</html>
